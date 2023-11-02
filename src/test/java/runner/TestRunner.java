@@ -9,8 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(     tags = "@smoke",
                                  features ="src/test/java/features",
                                  glue ={"base", "stepdefs"},
-                                 dryRun =true,
-                                 monochrome =true,
+                                 dryRun =false,
+                                 monochrome =false,
                                  plugin ={"pretty", "html:target/report.html", "json:target/report.json"})
 
 

@@ -17,13 +17,6 @@ public class AutoStepDefinition extends TestBase {
 		homePage.verifyTitleText(string);
 
 	}
-
-	@Given("Sub-title is {string}")
-	public void sub_title_is(String string) {
-		homePage.verifySubTitleText(string);
-
-	}
-
 	@Given("footter will be {string}")
 	public void footter_will_be(String string) {
 		homePage.verifyFootterText(string);

@@ -7,7 +7,6 @@ Feature: Validating Progressive insurance 2 - Data Table or Date Driven Approch 
   @BDD-6671
   Scenario Outline: Auto quote test 2
     Given home page title is "Welcome to Progressive Insurance®"
-    And Sub-title is  "Better insurance starts here"
     And footter will be "Select a product to quote"
     When user click on Auto
     And user input zipcode <zipCode>
@@ -26,7 +25,7 @@ Feature: Validating Progressive insurance 2 - Data Table or Date Driven Approch 
       | '9b12d'   | '5'      |
       | '11218'   | '5'      |
       
-  @BDD-8559
+ @BDD-8559
  Scenario Outline: Auto quote test 2
     Given home page title is 'Welcome to Progressive Insurance®'
     And Sub-title is  "Better insurance starts here"

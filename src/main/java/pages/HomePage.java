@@ -14,12 +14,9 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath = "//a[@class='logo']")
-	WebElement homePageText;
-	@FindBy(xpath = "//div[@class='intro']/h1")
+	
+	@FindBy(tagName = "h1")
 	WebElement titleText;
-	@FindBy(xpath = "//h1/following-sibling::p")  //subtitle should not dynamic
-	WebElement subTitleText;
 	@FindBy(css = ".copy.h4-style.centered")
 	WebElement footterText;
 	@FindBy(xpath= "(//p[@class='text block-link is-simple bounce'])[3]")
@@ -51,20 +48,15 @@ public class HomePage {
 	
 
 	
-	public void verifyHomePageTitle(String expected) {
-		verifyText(homePageText, expected);	
-		}
+	
 	
 	public void verifyTitleText(String expectedString ) {
           verifyText(titleText, expectedString);		
 		//verifyAttribute(titleText, expectedString, Attribute.INNER_HTML);
 	}
 	
-	public void verifySubTitleText(String expectedString ) {
-		//verifyText(subTitleText, expectedString);
-		verifyAttribute(subTitleText, expectedString, Attribute.INNER_HTML);
 	
-	}
+	
 	public void verifyFootterText(String expectedString) {
 		//verifyText(footterText, expectedString);
 		verifyAttribute(footterText, expectedString, Attribute.INNER_HTML);

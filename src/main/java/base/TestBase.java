@@ -58,7 +58,7 @@ public class TestBase {
 	}
 
 	public void tearUp() {
-		 driver.quit();
+		 //driver.quit();
 	}
 
 }
